@@ -1,45 +1,53 @@
 "use client"
 import useEmblaCarousel from "embla-carousel-react"
-import { ChevronLeft, ChevronRight, Microscope, HeartPulse, Stethoscope, Syringe, Clock  } from "lucide-react"
+import { ChevronLeft, ChevronRight, Microscope, HeartPulse, HeartCrack, Salad, Hand, Clock, TestTubeDiagonal  } from "lucide-react"
 import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr';
 
 const servicos = [
+    // Fisioterapia
     {
-        title:"Serviço 1",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        duration:"1h",
-        price:" definir",
-        icon: <Microscope/>,
-        linkText:"Gostaria de Mais informações"
-
+        title: "Fisioterapia",
+        description: "Tratamentos especializados para reabilitação muscular e alívio de dores, melhorando a mobilidade e qualidade de vida do paciente.",
+        duration: "Agende sua consulta",
+        icon: <HeartCrack/>,
+        linkText: "Gostaria de Mais informações sobre a consulta de fisioterapia"
     },
+    
+    // Exames laboratoriais
     {
-        title:"Serviço 2",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        duration:"1h",
-        price:" definir",
+        title: "Exames Laboratoriais",
+        description: "Realizamos exames de alta precisão para diagnóstico médico, com resultados rápidos e confiáveis para seu acompanhamento de saúde.",
+        duration: "Agende seu exame",
+        icon: <TestTubeDiagonal/>,
+        linkText: "Gostaria de mais informações sobre os exames laboratoriais"
+    },
+    
+    // Dermatologia
+    {
+        title: "Dermatologia",
+        description: "Cuidados com a pele, diagnóstico e tratamento de doenças dermatológicas, promovendo saúde e estética para todos os tipos de pele.",
+        duration: "Agende sua consulta",
+        icon: <Hand/>,
+        linkText: "Gostaria de mais informações sobre consulta dermatológica"
+    },
+    
+    // Cardiologia
+    {
+        title: "Cardiologia",
+        description: "Consultas e exames especializados para prevenção, diagnóstico e tratamento de doenças cardíacas, visando melhorar a saúde do coração.",
+        duration: "Agende sua consulta",
         icon: <HeartPulse/>,
-        linkText:"Gostaria de Mais informações"
-
+        linkText: "Gostaria de mais informações sobre consulta cardiológica"
     },
+    
+    // Nutricionista
     {
-        title:"Serviço 3",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        duration:"1h",
-        price:" definir",
-        icon: <Stethoscope/>,
-        linkText:"Gostaria de Mais informações"
-
-    },
-    {
-        title:"Serviço 4",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        duration:"1h",
-        price:" definir",
-        icon: <Syringe/>,
-        linkText:"Gostaria de Mais informações"
-
-    },
+        title: "Nutricionista",
+        description: "Orientação nutricional para um estilo de vida saudável, visando melhorar a alimentação e o bem-estar através de dietas personalizadas.",
+        duration: "Agende sua consulta",
+        icon: <Salad/>,
+        linkText: "Gostaria de mais informações sobre consulta nutricional"
+      }
 ]
 
 export function Servicos(){
