@@ -42,7 +42,7 @@ const depoimentos = [
 export function MVV(){
     
     return(
-        <section className="bg-white py-16">
+        <section id="mvv"className="bg-white py-16">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-bold text-center mb-12">Missão, Visão e Valores</h2>
                 <div className="relative  mx-auto">

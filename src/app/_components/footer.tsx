@@ -1,9 +1,9 @@
-import liv from '../../../public/liv.jpg';
+import liv from '../../../public/liv.png';
 import mais from '../../../public/mais.png';
 import unimed from '../../../public/unimed.png';
 import bradesco from '../../../public/bradesco.webp';
-import caixa from '../../../public/caixa.jpeg';
-import hapivida from '../../../public/hapivida.webp';
+import caixa from '../../../public/caixa.png';
+import hapivida from '../../../public/hapivida.png';
 import Image from 'next/image';
 import { FacebookLogo, InstagramLogo, WhatsappLogo, YoutubeLogo } from '@phosphor-icons/react/dist/ssr';
 
@@ -18,13 +18,13 @@ const brands = [
 
 export function Footer(){
     return(
-        <section className='bg-white py-16 text-gray-400'>
+        <section id="footer" className='bg-white py-16 text-gray-400'>
             <div className='container mx-auto px-4'>
                 <div className='border-b border-gray-400/20 pb-8'>
                     <h4 className='text-3xl font-semibold mb-8 text-center'>Convênios</h4>
                     <div className='grid grid-cols-2 lg:grid-cols-6 gap-8'>
                         {brands.map((item, index ) =>(
-                            <div key={index} className='bg-[#FDF6ec] p-4 rounded-lg flex items-center justify-center'>
+                            <div key={index} className='bg-[#1e293b] p-4 rounded-lg flex items-center justify-center'>
                                 <Image
                                     src={item.logo}
                                     alt={item.name}

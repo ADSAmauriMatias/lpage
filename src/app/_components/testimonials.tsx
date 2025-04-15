@@ -7,14 +7,14 @@ import Image from "next/image";
 const depoimentos = [
     {
         content: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        author:"Fulano 1",
-        role:" Alguma coisa medica",
+        author:"Especialidade",
+        role:" Fisioterapia.",
         image: tutor1,
     },
     {
         content: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        author:"Fulano 2",
-        role:" Alguma coisa medica",
+        author:"Especialidade",
+        role:" Dermatologia",
         image: tutor1,
     },
 ]
@@ -34,7 +34,7 @@ export function Depoimentos(){
     }
     
     return(
-        <section className="bg-[#FDF6ec] py-16">
+        <section id="testimonials" className="bg-[#FDF6ec] py-16">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-bold text-center mb-12">Depoimentos</h2>
                 <div className="relative max-w-4xl mx-auto">

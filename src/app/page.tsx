@@ -7,7 +7,7 @@ import { MVV } from "./_components/mvv"
 
 export default function Home(){
   return(
-    <main>
+    <main className="scroll-smooth">
       <Hero/>
       <MVV/>
       <Sobre/>
