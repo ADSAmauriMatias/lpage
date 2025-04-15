@@ -1,6 +1,6 @@
 import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr';
 import imgHero  from '../../../public/imgHero.png';
-import  Image  from 'next/Image';
+import  Image  from 'next/image';
 
 const banner = [
     {
