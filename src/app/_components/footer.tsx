@@ -20,7 +20,7 @@ export function Footer(){
     return(
         <section id="footer" className='bg-white py-16 text-gray-400'>
             <div className='container mx-auto px-4'>
-                <div className='border-b border-gray-400/20 pb-8'>
+                {/* <div className='border-b border-gray-400/20 pb-8'>
                     <h4 className='text-3xl font-semibold mb-8 text-center'>Convênios</h4>
                     <div className='grid grid-cols-2 lg:grid-cols-6 gap-8'>
                         {brands.map((item, index ) =>(
@@ -40,7 +40,7 @@ export function Footer(){
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> */}
                 <footer className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md-12 mt-5'>
                     <div>
                         <h3 className='text-2xl font-semibold mb-2'>Clínica de Saúde</h3>

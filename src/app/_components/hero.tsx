@@ -1,6 +1,6 @@
 import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr';
 import imgHero  from '../../../public/imgHero.png';
-import  Image  from 'next/Image';
+import  Image  from 'next/image';
 
 const banner = [
     {
@@ -41,9 +41,6 @@ export function Hero() {
                                     <WhatsappLogo className='w-5 h-5' />
                                     Contato
                                 </a>
-                                <div className="mt-8">
-                                    <p className="text-sm mb-4"><b className="bg-black text-white px-2 py-1 rounded-md">S</b>aiba aqui</p>
-                                </div>
                             </div>
                         </div>
 
