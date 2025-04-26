@@ -76,22 +76,18 @@ export function Especialidades() {
                         <div className="overflow-hidden" ref={emblaRef}>
                             <div className="flex">
                             {depoimentos.map((item, index) => (
-                                <div key={index} className="flex-[0_0_80%] min-w-0 md:flex-[0_0_calc(100%/4)] px-3">
+                                <div key={index} className="flex-[0_0_80%] min-w-0 md:flex-[0_0_calc(100%/4)] px-12">
                                     <article className="bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
                                         <div className="flex flex-col items-center text-center space-y-4">
-                                            <div>
-                                                <Image
-                                                    src={item.image}
-                                                    alt={item.especialidade}
-                                                    width={200}
-                                                    height={50}
-                                                    quality={100}
-                                                    className='object-contain rounded-2xl'
-                                                />
-                                            </div>
-                                            <div>
-                                                <p className="font-bold">{item.especialidade}</p>
-                                            </div>
+                                            <Image
+                                                src={item.image}
+                                                alt={item.especialidade}
+                                                width={200}
+                                                height={50}
+                                                quality={100}
+                                                className='object-contain rounded-2xl'
+                                            />
+                                            <p className="font-bold">{item.especialidade}</p>
                                         </div>
                                     </article>
                                 </div>

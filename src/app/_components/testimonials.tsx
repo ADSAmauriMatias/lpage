@@ -40,7 +40,7 @@ export function Depoimentos(){
     }
     
     return(
-        <section id="testimonials" className="bg-[#FDF6ec] py-16">
+        <section id="testimonials" className="bg-blue-100 py-16">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-bold text-center mb-12">Depoimentos</h2>
                 <div className="relative max-w-4xl mx-auto">

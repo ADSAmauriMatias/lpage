@@ -1,13 +1,17 @@
 "use client"
 import useEmblaCarousel from "embla-carousel-react"
-import { ChevronLeft, ChevronRight, Microscope, HeartPulse, HeartCrack, Salad, Hand, Clock, TestTubeDiagonal  } from "lucide-react"
+import { ChevronLeft, ChevronRight, Stethoscope , HeartCrack, Salad, Hand, Clock, TestTubeDiagonal, SmilePlus  } from "lucide-react"
 import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr';
+import { BsLungs } from "react-icons/bs";
+import { MdElderly } from "react-icons/md";
+import { AiOutlineWoman } from "react-icons/ai";
+import { GiBrain, GiHealthIncrease  } from "react-icons/gi";
 
 const servicos = [
     // Fisioterapia
     {
         title: "Fisioterapia",
-        description: "Tratamentos especializados para reabilitação muscular e alívio de dores, melhorando a mobilidade e qualidade de vida do paciente.",
+        description: "Oferecemos atendimento individualizado, com foco na prevenção, tratamento e reabilitação de disfunções físicas. Nossa equipe especializada utiliza técnicas atualizadas para promover alívio da dor, melhora funcional e qualidade de vida. Agende sua avaliação e confie seu cuidado a quem entende de movimento. ",
         duration: "Agende sua consulta",
         icon: <HeartCrack/>,
         linkText: "Gostaria de Mais informações sobre a consulta de fisioterapia"
@@ -16,38 +20,76 @@ const servicos = [
     // Exames laboratoriais
     {
         title: "Exames Laboratoriais",
-        description: "Realizamos exames de alta precisão para diagnóstico médico, com resultados rápidos e confiáveis para seu acompanhamento de saúde.",
+        description: "Exames laboratoriais com precisão e cuidado Fundamentais para o diagnóstico e a prevenção, os exames laboratoriais ajudam a manter sua saúde em dia. Contamos com tecnologia moderna e uma equipe qualificada para garantir resultados confiáveis e atendimento de excelência. Agende seus exames e cuide-se com segurança.",
         duration: "Agende seu exame",
         icon: <TestTubeDiagonal/>,
         linkText: "Gostaria de mais informações sobre os exames laboratoriais"
     },
-    
-    // Dermatologia
+  
+    // Geriatria
     {
-        title: "Dermatologia",
-        description: "Cuidados com a pele, diagnóstico e tratamento de doenças dermatológicas, promovendo saúde e estética para todos os tipos de pele.",
-        duration: "Agende sua consulta",
-        icon: <Hand/>,
-        linkText: "Gostaria de mais informações sobre consulta dermatológica"
+        title: "Geriatria",
+        description: "A Geriatria é a especialidade médica dedicada ao cuidado integral da pessoa idosa. Mais do que tratar doenças, o geriatra busca promover bem-estar, autonomia e envelhecimento saudável, com atenção às necessidades físicas, emocionais e sociais de cada paciente. O acompanhamento regular com um geriatra contribui para uma vida mais ativa, segura e com mais qualidade. Agende uma avaliação e descubra os benefícios desse cuidado especializado",
+        duration: "Agende seu exame",
+        icon: <MdElderly/>,
+        linkText: "Gostaria de mais informações sobre caonsulta"
     },
     
-    // Cardiologia
+    // Nutrição
     {
-        title: "Cardiologia",
-        description: "Consultas e exames especializados para prevenção, diagnóstico e tratamento de doenças cardíacas, visando melhorar a saúde do coração.",
-        duration: "Agende sua consulta",
-        icon: <HeartPulse/>,
-        linkText: "Gostaria de mais informações sobre consulta cardiológica"
-    },
-    
-    // Nutricionista
-    {
-        title: "Nutricionista",
-        description: "Orientação nutricional para um estilo de vida saudável, visando melhorar a alimentação e o bem-estar através de dietas personalizadas.",
-        duration: "Agende sua consulta",
+        title: "Nutrição",
+        description: "O atendimento nutricional oferece um plano alimentar personalizado, ajudando na prevenção de doenças, no controle do peso e na melhoria da qualidade de vida. Com orientações práticas e individualizadas, você alcança mais equilíbrio e bem-estar. Agende sua consulta e cuide da sua saúde com o apoio de um nutricionista.",
+        duration: "Agende seu exame",
         icon: <Salad/>,
-        linkText: "Gostaria de mais informações sobre consulta nutricional"
-      }
+        linkText: "Gostaria de mais informações sobre avaliação"
+    },
+    
+    // Pneumologia 
+    {
+        title: "Pneumologia ",
+        description: "O ferecemos um atendimento especializado para diagnosticar e tratar problemas respiratórios como tosse persistente, falta de ar e doenças como asma, bronquite e DPOC. Contamos com exames precisos e um atendimento personalizado para garantir sua saúde pulmonar. Agende sua consulta e respire com mais qualidade e conforto. Estamos aqui para cuidar de você.",
+        duration: "Agende seu exame",
+        icon: <BsLungs/>,
+        linkText: "Gostaria de mais informações sobre consulta"
+    },
+    
+    // Ginecologia  
+    {
+        title: "Ginecologia  ",
+        description: "Nosso atendimento ginecológico oferece cuidados especializados para a saúde feminina em todas as fases da vida. Realizamos exames preventivos e tratamos condições como problemas menstruais, infecções e desequilíbrios hormonais. Agende sua consulta e receba o atendimento personalizado que você merece. Estamos aqui para cuidar de você.",
+        duration: "Agende sua consulta",
+        icon: <AiOutlineWoman/>,
+        linkText: "Gostaria de mais informações sobre consulta"
+    },
+    
+    // Psicólogo  
+    {
+        title: "Psicólogo  ",
+        description: "Contamos com profissionais especializados em Psicologia para apoiar sua saúde mental e emocional. Oferecemos acompanhamento para lidar com questões como ansiedade, estresse, depressão, dificuldades de relacionamento e autoconhecimento. Agende sua consulta e receba o suporte necessário para melhorar sua qualidade de vida. Estamos aqui para ajudar você a se sentir melhor.",
+        duration: "Agende sua consulta",
+        icon: <GiBrain/>,
+        linkText: "Gostaria de mais informações sobre consulta"
+    },
+    
+    // Endocrinologia  
+    {
+        title: "Endocrinologia  ",
+        description: "Nossa clínica oferece atendimento especializado em Endocrinologia, com foco no diagnóstico e tratamento de distúrbios hormonais. Contamos com profissionais qualificados para oferecer um cuidado personalizado, visando o equilíbrio do seu sistema endócrino e a melhoria da sua qualidade de vida. Agende sua consulta e receba o suporte que você merece.",
+        duration: "Agende sua consulta",
+        icon: <GiHealthIncrease/>,
+        linkText: "Gostaria de mais informações sobre consulta"
+    },
+    
+    // Clínico Geral  
+    {
+        title: "Clínico Geral  ",
+        description: "Temos atendimento especializado em Clínica Geral, focando no diagnóstico, tratamento e prevenção de diversas condições de saúde. Com uma abordagem holística e personalizada, nossos profissionais estão preparados para avaliar seu estado de saúde e encaminhá-lo ao tratamento adequado, quando necessário. Agende sua consulta e tenha um cuidado completo para o seu bem-estar. Estamos aqui para cuidar de você.",
+        duration: "Agende sua consulta",
+        icon: <Stethoscope/>,
+        linkText: "Gostaria de mais informações sobre consulta"
+    },
+    
+    
 ]
 
 export function Servicos(){
@@ -93,7 +135,7 @@ export function Servicos(){
                                                 <Clock className="w-4 h-4"/>
                                                 <span>{item.duration}</span>
                                             </div>
-                                            <a href={`https://wa.me/?text=Ola vim pelo site e gostaria de mais informações sobre ${item.title}`} target='_blank' className="flex items-center justify-center gap-2 hover:bg-linear-to-t from-sky-500 to-[#000080] px-4 py-1 rounded-md duration-300 text-white">
+                                            <a href={`https://wa.me/?text=Ola vim pelo site e gostaria de mais informações sobre ${item.title}`} target='_blank' className="flex items-center justify-center gap-2 bg-[#1e293b] text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
                                                 <WhatsappLogo className="w-5 h-5"/>Agendar
                                             </a>
                                         </div>

@@ -7,7 +7,7 @@ import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr';
 
 export function Sobre(){
     return(
-        <section id="sobre" className="bg-[#FDF6ec] py-16">
+        <section id="sobre" className="bg-blue-100 py-16">
             <div className="container px-4 mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div className="relative" data-aos="fade-right" data-aos-delay="300">
@@ -32,9 +32,14 @@ export function Sobre(){
                         </div>
                     </div>
                     <div className="space-y-6 mt-10" data-aos="fade-up-left" data-aos-delay="300">
-                        <h2 className="text-4xl font-bold">Sobre</h2>
-                        <p>Infomation content:It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using </p>
-                        <ul className="space-y-4">
+                        <h2 className="text-4xl font-bold">Bem-vindo à Clínica Centro de Saúde Messejana</h2>
+                        <p>
+                            Na Clínica Centro de Saúde Messejana, oferecemos atendimento médico de excelência, com uma equipe qualificada e comprometida com o seu bem-estar. Contamos com um ambiente moderno e acolhedor, proporcionando cuidados especializados em diversas áreas, tanto medicas e não medicas. Nosso objetivo é oferecer um atendimento personalizado, focado na prevenção, diagnóstico e tratamento eficaz, garantindo a sua saúde e qualidade de vida.
+                        </p>
+                        <p>
+                            Sabemos que saúde vai além do físico por isso, cuidamos de você de forma integral, com atenção ao corpo e à mente. Agende sua consulta e sinta a diferença de um cuidado completo.
+                        </p>
+                        {/* <ul className="space-y-4">
                             <li className="flex items-center gap-2">
                                 <Check className="text-red-500"/>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
                             </li>
@@ -44,11 +49,11 @@ export function Sobre(){
                             <li className="flex items-center gap-2">
                                 <Check className="text-red-500"/>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
                             </li>
-                        </ul>
+                        </ul> */}
                         <div className="flex gap-2">
-                            <a href={`https://wa.me/?text=Ola vim pelo site e gostaria de mais informações`} target='_blank' className="bg-linear-to-t from-sky-500 to-[#000080] text-white flex items-center justify-center w-fit gap-2 py-2 px-4 rounded-md">
+                            <a href={`https://wa.me/?text=Ola vim pelo site e gostaria de mais informações`} target='_blank' className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition flex items-center justify-center w-fit gap-2 py-2 px-4 rounded-md">
                                 <WhatsappLogo className="w-5 h-5 text-white"/>
-                                Contato
+                                Saiba Mais
                             </a>
                             <a href="https://maps.app.goo.gl/K2W7d1CPdXPTmqN57" target='_blank' className="text-black flex items-center justify-center w-fit gap-2 py-2 px-4 rounded-md">
                                 <MapPin className="w-5 h-5 text-black"/>

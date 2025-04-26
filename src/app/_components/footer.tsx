@@ -18,7 +18,7 @@ const brands = [
 
 export function Footer(){
     return(
-        <section id="footer" className='bg-white py-16 text-gray-400'>
+        <section id="footer" className='bg-blue-100 py-16 text-gray-400'>
             <div className='container mx-auto px-4'>
                 {/* <div className='border-b border-gray-400/20 pb-8'>
                     <h4 className='text-3xl font-semibold mb-8 text-center'>Convênios</h4>
@@ -43,8 +43,8 @@ export function Footer(){
                 </div> */}
                 <footer className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md-12 mt-5'>
                     <div>
-                        <h3 className='text-2xl font-semibold mb-2'>Clínica de Saúde</h3>
-                        <p className='mb-4'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letter</p>
+                        <h3 className='text-2xl font-semibold mb-2 text-green-500'>Clínica Centro de Saúde Messejana</h3>
+                        <p className='mb-4 text-black font'>Na Clínica Centro de Saúde Messejana, oferecemos atendimento médico de excelência, com uma equipe qualificada e comprometida com o seu bem-estar</p>
                         <a href={`https://wa.me/?text=Ola vim pelo site e gostaria de mais informações sobre consultas`} target='_blank' className='bg-green-500 px-4 text-white py-2 mt-4 rounded-md font-semibold flex items-center w-fit gap-2'>
                             <WhatsappLogo  className='w-5 h-5 '/>
                             Contato
@@ -52,22 +52,22 @@ export function Footer(){
                     </div>
 
                     <div>
-                        <h3 className='text-2xl font-semibold mb-2'>Contatos</h3>
-                        <p className='mb-4'>Email: teste@teste.copm.br</p>
-                        <p className='mb-4'>Telefone: (xx) 85 98888-8888</p>
-                        <p className='mb-4'>Rua : teste, 124 teste /teste</p>
+                        <h3 className='text-2xl font-semibold mb-2 text-green-500'>Contatos</h3>
+                        <p className='mb-4 text-black'><b>Email:</b> centrodesaudemessejana@gmail.com</p>
+                        <p className='mb-4 text-black'><b>Telefone:</b> (xx) 85 99164-9714</p>
+                        <p className='mb-4 text-black'><b>Endereço:</b> Rua Tenente Jurandir Alencar - N 3 - CEP 60840 - 000</p>
                     </div>
                     
                     <div>
-                        <h3 className='text-2xl font-semibold mb-2'>Redes Sociais</h3>
+                        <h3 className='text-2xl font-semibold mb-2 text-green-500'>Redes Sociais</h3>
                         <div className='flex gap-4'>
-                            <a href="" className='w-8 h-8'>
-                                <FacebookLogo/>
+                            <a href="" className='w-10 h-10 text-black' style={{ fontSize: 25 }}>
+                                <FacebookLogo />
                             </a>
-                            <a href="" className='w-8 h-8'>
+                            <a href="" className='w-10 h-10 text-black' style={{ fontSize: 25 }}>
                                 <InstagramLogo/>
                             </a>
-                            <a href="" className='w-8 h-8'>
+                            <a href="" className='w-10 h-10 text-black' style={{ fontSize: 25 }}>
                                 <YoutubeLogo/>
                             </a>
                         </div>
