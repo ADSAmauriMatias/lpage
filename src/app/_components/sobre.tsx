@@ -7,7 +7,7 @@ import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr';
 
 export function Sobre(){
     return(
-        <section id="sobre" className="bg-blue-100 py-16">
+        <section id="sobre" className="bg-gradient-to-r from-[#29535b] to-[#3e858d] py-16">
             <div className="container px-4 mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div className="relative" data-aos="fade-right" data-aos-delay="300">
@@ -32,11 +32,11 @@ export function Sobre(){
                         </div>
                     </div>
                     <div className="space-y-6 mt-10" data-aos="fade-up-left" data-aos-delay="300">
-                        <h2 className="text-4xl font-bold">Bem-vindo à Clínica Centro de Saúde Messejana</h2>
-                        <p>
+                        <h2 className="text-4xl font-bold text-white">Bem-vindo à Clínica Centro de Saúde Messejana</h2>
+                        <p className="text-1xl text-white">
                             Na Clínica Centro de Saúde Messejana, oferecemos atendimento médico de excelência, com uma equipe qualificada e comprometida com o seu bem-estar. Contamos com um ambiente moderno e acolhedor, proporcionando cuidados especializados em diversas áreas, tanto medicas e não medicas. Nosso objetivo é oferecer um atendimento personalizado, focado na prevenção, diagnóstico e tratamento eficaz, garantindo a sua saúde e qualidade de vida.
                         </p>
-                        <p>
+                        <p className="text-1xl text-white">
                             Sabemos que saúde vai além do físico por isso, cuidamos de você de forma integral, com atenção ao corpo e à mente. Agende sua consulta e sinta a diferença de um cuidado completo.
                         </p>
                         {/* <ul className="space-y-4">
@@ -51,12 +51,12 @@ export function Sobre(){
                             </li>
                         </ul> */}
                         <div className="flex gap-2">
-                            <a href={`https://wa.me/?text=Ola vim pelo site e gostaria de mais informações`} target='_blank' className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition flex items-center justify-center w-fit gap-2 py-2 px-4 rounded-md">
+                            <a href={`https://wa.me/?text=Ola vim pelo site e gostaria de mais informações`} target='_blank' className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md transition flex items-center justify-center w-fit gap-2 py-2 px-4 rounded-md">
                                 <WhatsappLogo className="w-5 h-5 text-white"/>
                                 Saiba Mais
                             </a>
-                            <a href="https://maps.app.goo.gl/K2W7d1CPdXPTmqN57" target='_blank' className="text-black flex items-center justify-center w-fit gap-2 py-2 px-4 rounded-md">
-                                <MapPin className="w-5 h-5 text-black"/>
+                            <a href="https://maps.app.goo.gl/AhtaqQZ8nh9bBLEz9" target='_blank' className="text-white flex items-center justify-center w-fit gap-2 py-2 px-4 rounded-md hover:bg-emerald-700 transition">
+                                <MapPin className="w-5 h-5 text-white"/>
                                 Localização
                             </a>
                         </div>

@@ -40,14 +40,14 @@ export function Depoimentos(){
     }
     
     return(
-        <section id="testimonials" className="bg-blue-100 py-16">
+        <section id="testimonials" className="bg-gradient-to-r from-[#3e858d] to-[#29535b] py-16">
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold text-center mb-12">Depoimentos</h2>
+                <h2 className="text-4xl font-bold text-center mb-12 text-white" data-aos="fade-down">Depoimentos</h2>
                 <div className="relative max-w-4xl mx-auto">
                     <div className="overflow-hidden" ref={emblaRef}>
                         <div className="flex">
                             {depoimentos.map((item, index) => (
-                                <div key={index} className="flex-[0_0_100%] min-w-0  px-3">
+                                <div key={index} className="flex-[0_0_100%] lg:flex-[0_0_calc(100%/3)]  min-w-0  px-3" data-aos="fade-up">
                                     <article className="bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
                                         <div className="flex flex-col items-center text-center space-y-4">
                                             <div className="relative w-24 h-24">

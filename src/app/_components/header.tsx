@@ -65,17 +65,6 @@ export const Header = () => {
               Especialidades
             </a> */}
             <Link
-                to="mvv"
-                smooth={true}
-                duration={0} 
-                offset={-70}  
-                spy={true}
-                delay={0}
-                className="text-gray-700 hover:text-blue-600 cursor-pointer"
-                >
-                Missão, Visão e Valores
-            </Link>
-            <Link
                 to="sobre"
                 smooth={true}
                 duration={0} 
@@ -106,6 +95,17 @@ export const Header = () => {
                 delay={0}
                 className="text-gray-700 hover:text-blue-600 cursor-pointer"
                 >
+                Depoimentos
+            </Link>
+            <Link
+                to="especialidades"
+                smooth={true}
+                duration={0} 
+                offset={-70}  
+                spy={true}
+                delay={0}
+                className="text-gray-700 hover:text-blue-600 cursor-pointer"
+                >
                 Especialidades
             </Link>
           </div>
@@ -116,7 +116,7 @@ export const Header = () => {
               </button>
             </a> */}
             <a href={`https://wa.me/?text=${(contato.mensagem)}`} target='_blank'>
-              <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
+              <button className="bg-emerald-600 hover:bg-emerald-700 transition text-white px-4 py-2 rounded-md ">
                 Contato
               </button>
             </a>
@@ -193,18 +193,6 @@ export const Header = () => {
           >
             <hr className="h-px my-1 bg-blue-500 border-0 dark:bg-gray-700"></hr>
                 <Link
-                    to="mvv"
-                    smooth={true}
-                    duration={0} 
-                    offset={-70}  
-                    spy={true}
-                    delay={0}
-                    className="block text-gray-700 hover:text-blue-600 cursor-pointer"
-                    onClick={() => setMenuOpen(false)}
-                >
-                    Missão, Visão e Valores
-                </Link>
-                <Link
                     to="sobre"
                     smooth={true}
                     duration={0} 
@@ -230,6 +218,18 @@ export const Header = () => {
                 </Link>
                 <Link
                     to="testimonials"
+                    smooth={true}
+                    duration={0} 
+                    offset={-70}  
+                    spy={true}
+                    delay={0}
+                    className="block text-gray-700 hover:text-blue-600 cursor-pointer"
+                    onClick={() => setMenuOpen(false)}
+                >
+                    Depoimentos
+                </Link>
+                <Link
+                    to="especialidades"
                     smooth={true}
                     duration={0} 
                     offset={-70}  
