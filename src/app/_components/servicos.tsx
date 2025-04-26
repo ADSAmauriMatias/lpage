@@ -112,15 +112,15 @@ export function Servicos(){
     }
     
     return(
-        <section id="servicos"className="bg-white py-16">
+        <section id="servicos"className="bg-white py-16 text-gray-400">
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold mb-12">Serviços</h2>
+                <h2 className="text-4xl font-bold mb-12" data-aos="fade-down">Serviços</h2>
                 <div className="relative">
                     <div className="overflow-hidden" ref={emblaRef}>
                         <div className="flex">
                             {servicos.map((item, index) => (
-                                <div key={index} className="flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3">
-                                    <article className="bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
+                                <div key={index} className="flex-[0_0_100%] min-w-0 lg:flex-[0_0_calc(100%/3)] md:flex-[0_0_calc(100%/2)] px-3">
+                                    <article className="bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col" data-aos="fade-up" data-aos-delay="300">
                                         <div className="flex-1 flex items-start justify-between">
                                             <div className="flex gap-3">
                                                 <span className="text-3xl">{item.icon}</span>
@@ -135,7 +135,7 @@ export function Servicos(){
                                                 <Clock className="w-4 h-4"/>
                                                 <span>{item.duration}</span>
                                             </div>
-                                            <a href={`https://wa.me/?text=Ola vim pelo site e gostaria de mais informações sobre ${item.title}`} target='_blank' className="flex items-center justify-center gap-2 bg-[#1e293b] text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
+                                            <a href={`https://wa.me/?text=Ola vim pelo site e gostaria de mais informações sobre ${item.title}`} target='_blank' className="flex items-center justify-center gap-2 bg-[#1e293b] text-white px-4 py-2 rounded-md hover:bg-emerald-700">
                                                 <WhatsappLogo className="w-5 h-5"/>Agendar
                                             </a>
                                         </div>

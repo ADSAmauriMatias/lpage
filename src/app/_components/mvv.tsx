@@ -43,14 +43,14 @@ export function MVV(){
     }
 
     return(
-        <section id="mvv"className="bg-white py-16">
+        <section id="mvv"className="bg-white py-16 text-gray-400">
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold text-center mb-12">Missão, Visão e Valores</h2>
+                <h2 className="text-4xl font-bold  mb-12" data-aos="fade-down">Missão, Visão e Valores</h2>
                 <div className="relative  mx-auto">
                     <div className="overflow-hidden" ref={emblaRef}>
                         <div className="flex">
                             {depoimentos.map((item, index) => (
-                                <div key={index} className="flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3">
+                                <div key={index} className="flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3" data-aos="fade-up" data-aos-delay="300">
                                     <article className="bg-[#1e293b] text-white rounded-2xl space-y-4 h-full flex flex-col">
                                         <div className="flex flex-col items-center text-center space-y-4">
                                             <div className="relative w-full h-20 rounded-t-2xl"  style={{ backgroundColor: item.color }}>

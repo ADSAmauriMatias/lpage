@@ -68,16 +68,16 @@ export function Especialidades() {
 
 
     return(
-        <section id="footer" className='bg-white py-16 text-gray-400'>
+        <section id="especialidades" className='bg-white py-16 text-gray-400'>
             <div className='container mx-auto px-4'>
                 <div className='pb-8'>
-                    <h4 className='text-3xl font-semibold mb-8 text-center'>Especialidades</h4>
+                    <h4 className='text-4xl font-bold mb-12' data-aos="fade-down">Especialidades</h4>
                     <div className="relative">
                         <div className="overflow-hidden" ref={emblaRef}>
                             <div className="flex">
                             {depoimentos.map((item, index) => (
-                                <div key={index} className="flex-[0_0_80%] min-w-0 md:flex-[0_0_calc(100%/4)] px-12">
-                                    <article className="bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
+                                <div key={index} className="flex-[0_0_100%] min-w-0 lg:flex-[0_0_calc(80%/4)] md:flex-[0_0_calc(100%/3)] px-6" >
+                                    <article className="bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col" data-aos="fade-up" data-aos-delay="300">
                                         <div className="flex flex-col items-center text-center space-y-4">
                                             <Image
                                                 src={item.image}
