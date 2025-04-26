@@ -4,6 +4,7 @@ import { Servicos } from "./_components/servicos"
 import { Depoimentos } from "./_components/testimonials"
 import { Footer } from "./_components/footer"
 import { MVV } from "./_components/mvv"
+import { Especialidades } from "./_components/especialidades"
 
 export default function Home(){
   return(
@@ -13,6 +14,7 @@ export default function Home(){
       <Sobre/>
       <Servicos/>
       <Depoimentos/>
+      <Especialidades/>
       <Footer/>
     </main>
   )

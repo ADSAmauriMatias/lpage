@@ -5,8 +5,8 @@ import  Image  from 'next/image';
 const banner = [
     {
         imageBanner: imgHero,
-        title: 'Clínica Central Saúde',
-        descricao: 'Cuidando de você em cada detalhe! Consultas, exames e atendimentos especializados com qualidade e agilidade. Agende agora mesmo e viva com mais saúde! Se quiser algo mais formal, descontraído ou com foco em algum serviço, posso ajustar!',
+        title: 'Clínica Centro de Saúde Messejana',
+        descricao: 'Sua saúde, nossa missão e compromisso diário!',
         contato: 'Ola vim pelo site e gostaria de mais informações.',
     }
 ]
@@ -41,9 +41,6 @@ export function Hero() {
                                     <WhatsappLogo className='w-5 h-5' />
                                     Contato
                                 </a>
-                                <div className="mt-8">
-                                    <p className="text-sm mb-4"><b className="bg-black text-white px-2 py-1 rounded-md">S</b>aiba aqui</p>
-                                </div>
                             </div>
                         </div>
 
