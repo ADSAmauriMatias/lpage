@@ -52,7 +52,7 @@ export const Header = () => {
                   scrolled ? "h-10" : "h-12"
                 }`}
               />
-              <h2 className="text-2xl font-bold ml-4 text-gray-400">Centro de Saúde Messejana</h2>
+              <h2 className="text-base lg:text-2xl font-bold ml-4 text-gray-400">Centro de Saúde Messejana</h2>
             </div>
           </a>
           <div className="hidden md:flex space-x-6 text-gray-700 font-medium">

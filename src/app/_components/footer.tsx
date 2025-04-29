@@ -1,22 +1,8 @@
 "use client"
 import { useEffect, useState } from 'react';
-import liv from '../../../public/liv.png';
-import mais from '../../../public/mais.png';
-import unimed from '../../../public/unimed.png';
-import bradesco from '../../../public/bradesco.webp';
-import caixa from '../../../public/caixa.png';
-import hapivida from '../../../public/hapivida.png';
 import Image from 'next/image';
 import { FacebookLogo, InstagramLogo, WhatsappLogo, YoutubeLogo, ArrowUp } from '@phosphor-icons/react/dist/ssr';
-
-const brands = [
-    {name: "liv", logo: liv},
-    {name: "mais", logo: mais},
-    {name: "unimed", logo: unimed},
-    {name: "bradesco", logo: bradesco},
-    {name: "caixa", logo: caixa},
-    {name: "hapivida", logo: hapivida},
-]
+import { MapPin } from "lucide-react";
 
 export function Footer(){
 
@@ -38,27 +24,6 @@ const [showButton, setShowButton] = useState(false);
     return(
         <section id="footer" className='py-16 text-gray-400'>
             <div className='container mx-auto px-4'>
-                {/* <div className='border-b border-gray-400/20 pb-8'>
-                    <h4 className='text-3xl font-semibold mb-8 text-center'>Convênios</h4>
-                    <div className='grid grid-cols-2 lg:grid-cols-6 gap-8'>
-                        {brands.map((item, index ) =>(
-                            <div key={index} className='bg-[#1e293b] p-4 rounded-lg flex items-center justify-center'>
-                                <Image
-                                    src={item.logo}
-                                    alt={item.name}
-                                    width={100}
-                                    height={50}
-                                    quality={100}
-                                    style={{
-                                        width:"auto",
-                                        height:"auto",
-                                    }}
-                                    className='object-contain'
-                                />
-                            </div>
-                        ))}
-                    </div>
-                </div> */}
                 <footer className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md-12 mt-5'>
                     <div data-aos="fade-right" data-aos-delay="300">
                         <h3 className='text-2xl font-semibold mb-2'>Clínica Centro de Saúde Messejana</h3>
@@ -79,14 +44,14 @@ const [showButton, setShowButton] = useState(false);
                     <div data-aos="fade-left" data-aos-delay="300">
                         <h3 className='text-2xl font-semibold mb-2'>Redes Sociais</h3>
                         <div className='flex gap-4'>
-                            <a href="" className='w-10 h-10' style={{ fontSize: 25 }}>
+                            <a href="https://www.facebook.com/share/12JMfBNhfZw/?mibextid=wwXIfr" target='_blank' className='w-10 h-10' style={{ fontSize: 25 }}>
                                 <FacebookLogo />
                             </a>
-                            <a href="" className='w-10 h-10' style={{ fontSize: 25 }}>
+                            <a href="https://www.instagram.com/centrodesaudemessejana?igsh=MXJ6azN3MjVqdTV5bQ==" target='_blank' className='w-10 h-10' style={{ fontSize: 25 }}>
                                 <InstagramLogo/>
                             </a>
-                            <a href="" className='w-10 h-10' style={{ fontSize: 25 }}>
-                                <YoutubeLogo/>
+                            <a href="https://maps.app.goo.gl/AhtaqQZ8nh9bBLEz9" target='_blank' className='w-10 h-10' style={{ fontSize: 25 }}>
+                                <MapPin/>
                             </a>
                         </div>
                     </div>
