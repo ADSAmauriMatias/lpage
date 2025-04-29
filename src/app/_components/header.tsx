@@ -52,22 +52,10 @@ export const Header = () => {
                   scrolled ? "h-10" : "h-12"
                 }`}
               />
-              <h2 className="text-base lg:text-2xl font-bold ml-4 text-gray-400">Centro de Saúde Messejana</h2>
+              <h2 className="hidden md:block text-base lg:text-2xl font-bold ml-4 text-gray-400">Centro de Saúde Messejana</h2>
             </div>
           </a>
           <div className="hidden md:flex space-x-6 text-gray-700 font-medium">
-            {/* <a href="#mvv" className="hover:text-blue-600">
-              Missão, Visão e Valores
-            </a>
-            <a href="#sobre" className="hover:text-blue-600">
-              Sobre
-            </a>
-            <a href="#servicos" className="hover:text-blue-600">
-              Serviços
-            </a>
-            <a href="#testimonials" className="hover:text-blue-600">
-              Especialidades
-            </a> */}
             <Link
                 to="sobre"
                 smooth={true}
@@ -114,11 +102,6 @@ export const Header = () => {
             </Link>
           </div>
           <div className="hidden md:flex space-x-4">
-            {/* <a href="Caso necessario">
-              <button className="border border-blue-500 text-blue-500 px-4 py-2 rounded-md hover:bg-blue-50 transition">
-                Entrar
-              </button>
-            </a> */}
             <a href={`https://wa.me/?text=${(contato.mensagem)}`} target='_blank'>
               <button className="bg-emerald-600 hover:bg-emerald-700 transition text-white px-4 py-2 rounded-md ">
                 Contato
@@ -126,28 +109,6 @@ export const Header = () => {
             </a>
           </div>
           {/* Botão de menu para mobile */}
-          {/* <div className="md:hidden">
-            <button
-              className="text-gray-700"
-              aria-label="Menu"
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
-            </button>
-          </div> */}
           <div className="md:hidden">
                 <button
                     className="text-gray-700"
@@ -189,7 +150,6 @@ export const Header = () => {
             </div>
         </nav>
         {menuOpen && (
-            // <div className="md:hidden mt-4 space-y-4 text-gray-700 font-medium transition-all transition-discrete">
         <div
             className={`md:hidden flex flex-col px-4 space-y-4 text-gray-700 font-medium transition-all duration-800 ${
               menuOpen ? "animate-in fade-in slide-in-from-top" : "hidden"
