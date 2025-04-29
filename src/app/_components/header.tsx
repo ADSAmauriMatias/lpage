@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import logo from '../../../public/LOGOC.png';
 
 export const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -43,13 +44,16 @@ export const Header = () => {
       <div className="max-w-7xl mx-auto px-4">
         <nav className="flex items-center justify-between">
           <a href="#hero">
-            <img
-              src="#"
-              alt="Logo Principal do Site"
-              className={`transition-all duration-300 ease-in-out ${
-                scrolled ? "h-8" : "h-10"
-              }`}
-            />
+            <div className="flex items-center" data-aos="fade-down">
+              <img
+                src={logo.src}
+                alt="Logo Principal do Site"
+                className={`transition-all duration-300 ease-in-out ${
+                  scrolled ? "h-10" : "h-12"
+                }`}
+              />
+              <h2 className="text-2xl font-bold ml-4 text-gray-400">Centro de Saúde Messejana</h2>
+            </div>
           </a>
           <div className="hidden md:flex space-x-6 text-gray-700 font-medium">
             {/* <a href="#mvv" className="hover:text-blue-600">
