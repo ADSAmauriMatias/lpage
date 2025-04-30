@@ -51,7 +51,7 @@ export function Sobre(){
                             </li>
                         </ul> */}
                         <div className="flex gap-2">
-                            <a href={`https://wa.me/?text=Ola vim pelo site e gostaria de mais informações`} target='_blank' className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md transition flex items-center justify-center w-fit gap-2 py-2 px-4 rounded-md">
+                            <a href={`https://wa.me/558896506273?text=Ola vim pelo site e gostaria de mais informações`} target='_blank' className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md transition flex items-center justify-center w-fit gap-2 py-2 px-4 rounded-md">
                                 <WhatsappLogo className="w-5 h-5 text-white"/>
                                 Saiba Mais
                             </a>

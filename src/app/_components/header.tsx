@@ -102,7 +102,7 @@ export const Header = () => {
             </Link>
           </div>
           <div className="hidden md:flex space-x-4">
-            <a href={`https://wa.me/?text=${(contato.mensagem)}`} target='_blank'>
+            <a href={`https://wa.me/558896506273?text=${(contato.mensagem)}`} target='_blank'>
               <button className="bg-emerald-600 hover:bg-emerald-700 transition text-white px-4 py-2 rounded-md ">
                 Contato
               </button>

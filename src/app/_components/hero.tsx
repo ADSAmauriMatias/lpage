@@ -35,7 +35,7 @@ export function Hero() {
                             <div  className="space-y-6 flex flex-col justify-center h-120">
                                 <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl leading-10" data-aos="fade-down">{item.title}</h1>
                                 <p className="lg:text-2xl" data-aos="fade-right">{item.descricao}</p>
-                                <a href={`https://wa.me/?text=${(item.contato)}`} target='_blank' data-aos="fade-up" data-aos-delay="300" className="bg-emerald-600 hover:bg-emerald-700 text-white transition px-5 py-2 rounded-md font-semibold flex items-center w-fit gap-2">
+                                <a href={`https://wa.me/558896506273?text=${(item.contato)}`} target='_blank' data-aos="fade-up" data-aos-delay="300" className="bg-emerald-600 hover:bg-emerald-700 text-white transition px-5 py-2 rounded-md font-semibold flex items-center w-fit gap-2">
                                     <WhatsappLogo className='w-5 h-5' />
                                     Saiba Mais
                                 </a>

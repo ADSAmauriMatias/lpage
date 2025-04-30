@@ -28,7 +28,7 @@ const [showButton, setShowButton] = useState(false);
                     <div data-aos="fade-right" data-aos-delay="300">
                         <h3 className='text-2xl font-semibold mb-2'>Clínica Centro de Saúde Messejana</h3>
                         <p className='mb-4 font'>Na Clínica Centro de Saúde Messejana, oferecemos atendimento médico de excelência, com uma equipe qualificada e comprometida com o seu bem-estar</p>
-                        <a href={`https://wa.me/?text=Ola vim pelo site e gostaria de mais informações sobre consultas`} target='_blank' className='bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 mt-4 rounded-md font-semibold flex items-center w-fit gap-2'>
+                        <a href={`https://wa.me/558896506273?text=Ola vim pelo site e gostaria de mais informações sobre consultas`} target='_blank' className='bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 mt-4 rounded-md font-semibold flex items-center w-fit gap-2'>
                             <WhatsappLogo  className='w-5 h-5 '/>
                             Contato
                         </a>
@@ -56,7 +56,7 @@ const [showButton, setShowButton] = useState(false);
                         </div>
                     </div>
                     {showButton && (
-                        <a href={`https://wa.me/?text=Ola vim pelo site e gostaria de mais informações.`} target='_blank' className="fixed bottom-6 right-6 bg-emerald-600 hover:bg-emerald-700 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 z-50">
+                        <a href={`https://wa.me/558896506273?text=Ola vim pelo site e gostaria de mais informações.`} target='_blank' className="fixed bottom-6 right-6 bg-emerald-600 hover:bg-emerald-700 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 z-50">
                             <WhatsappLogo className='w-8 h-8' />
                         </a>
                         )}
