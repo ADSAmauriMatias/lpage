@@ -32,9 +32,9 @@ export function Sobre(){
                         </div>
                     </div>
                     <div className="space-y-6 mt-10" data-aos="fade-up-left" data-aos-delay="300">
-                        <h2 className="text-4xl font-bold text-white">Bem-vindo à Clínica Centro de Saúde Messejana</h2>
+                        <h2 className="text-4xl font-bold text-white">Quem Somos</h2>
                         <p className="text-1xl text-white">
-                            Na Clínica Centro de Saúde Messejana, oferecemos atendimento médico de excelência, com uma equipe qualificada e comprometida com o seu bem-estar. Contamos com um ambiente moderno e acolhedor, proporcionando cuidados especializados em diversas áreas, tanto medicas e não medicas. Nosso objetivo é oferecer um atendimento personalizado, focado na prevenção, diagnóstico e tratamento eficaz, garantindo a sua saúde e qualidade de vida.
+                            Bem-vindo à Clínica Centro de Saúde Messejana, oferecemos atendimento médico de excelência, com uma equipe qualificada e comprometida com o seu bem-estar. Contamos com um ambiente moderno e acolhedor, proporcionando cuidados especializados em diversas áreas, tanto medicas e não medicas. Nosso objetivo é oferecer um atendimento personalizado, focado na prevenção, diagnóstico e tratamento eficaz, garantindo a sua saúde e qualidade de vida.
                         </p>
                         <p className="text-1xl text-white">
                             Sabemos que saúde vai além do físico por isso, cuidamos de você de forma integral, com atenção ao corpo e à mente. Agende sua consulta e sinta a diferença de um cuidado completo.
