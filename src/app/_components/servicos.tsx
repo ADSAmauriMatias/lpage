@@ -135,7 +135,7 @@ export function Servicos(){
                                                 <Clock className="w-4 h-4"/>
                                                 <span>{item.duration}</span>
                                             </div>
-                                            <a href={`https://wa.me/?text=Ola vim pelo site e gostaria de mais informações sobre ${item.title}`} target='_blank' className="flex items-center justify-center gap-2 bg-[#1e293b] text-white px-4 py-2 rounded-md hover:bg-emerald-700">
+                                            <a href={`https://wa.me/?text=Ola vim pelo site e gostaria de mais informações sobre ${item.title}`} target='_blank' className="flex items-center justify-center gap-2 bg-[#3e858d] text-white px-4 py-2 rounded-md hover:bg-emerald-700">
                                                 <WhatsappLogo className="w-5 h-5"/>Agendar
                                             </a>
                                         </div>

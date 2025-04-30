@@ -11,11 +11,11 @@ export default function Home(){
   return(
     <main className="scroll-smooth">
       <Hero/>
-      <MVV/>
+      <Especialidades/>
       <Sobre/>
       <Servicos/>
+      <MVV/>
       <Depoimentos/>
-      <Especialidades/>
       <Contratos/>
       <Footer/>
     </main>

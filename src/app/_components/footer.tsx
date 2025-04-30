@@ -56,12 +56,8 @@ const [showButton, setShowButton] = useState(false);
                         </div>
                     </div>
                     {showButton && (
-                        <a 
-                            href="#hero" 
-                            className="hidden md:block fixed bottom-6 right-6 bg-emerald-600 hover:bg-emerald-700 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 z-50"
-                            aria-label="Voltar ao topo"
-                        >
-                            <ArrowUp size={24} weight="bold" />
+                        <a href={`https://wa.me/?text=Ola vim pelo site e gostaria de mais informações.`} target='_blank' className="fixed bottom-6 right-6 bg-emerald-600 hover:bg-emerald-700 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 z-50">
+                            <WhatsappLogo className='w-8 h-8' />
                         </a>
                         )}
                 </footer>

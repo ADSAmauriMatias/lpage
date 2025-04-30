@@ -53,9 +53,9 @@ export function Depoimentos(){
     
     
     return(
-        <section id="testimonials" className="bg-gradient-to-r from-[#3e858d] to-[#29535b] py-16">
+        <section id="testimonials" className="bg-white py-16 text-gray-400">
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold text-center mb-12 text-white" data-aos="fade-down">Depoimentos</h2>
+                <h2 className="text-4xl font-bold mb-12" data-aos="fade-down">Depoimentos</h2>
                 <div className="relative">
                     <div className="overflow-hidden" ref={emblaRef}>
                         <div className="flex">
