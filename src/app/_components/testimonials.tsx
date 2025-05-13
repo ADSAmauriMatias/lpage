@@ -19,7 +19,7 @@ const depoimentos = [
         image: depoimentoFeminino1,
     },
     {
-        content: "Na Clínica Central de Saúde, recebi um atendimento excepcional. Profissionais altamente qualificados, ambiente acolhedor e uma atenção personalizada que fizeram toda a diferença no meu tratamento",
+        content: "Na Clínica Centro de Saúde, recebi um atendimento excepcional. Profissionais altamente qualificados, ambiente acolhedor e uma atenção personalizada que fizeram toda a diferença no meu tratamento",
         image: depoimentoFeminino2,
     },
     {
@@ -27,11 +27,11 @@ const depoimentos = [
         image: depoimentoMasculino2,
     },
     {
-        content: "Fui atendido na Clínica Central de Saúde e fiquei impressionada com o cuidado e atenção que recebi. A equipe é super profissional, mas ao mesmo tempo muito acolhedora. Me senti à vontade e bem cuidado durante todo o atendimento. Super recomendo!",
+        content: "Fui atendido na Clínica Centro de Saúde e fiquei impressionada com o cuidado e atenção que recebi. A equipe é super profissional, mas ao mesmo tempo muito acolhedora. Me senti à vontade e bem cuidado durante todo o atendimento. Super recomendo!",
         image: depoimentoFeminino3,
     },
     {
-        content: "Me senti realmente cuidado na Clínica Central de Saúde. A atenção, o carinho e o respeito da equipe fizeram toda a diferença no meu atendimento.",
+        content: "Me senti realmente cuidado na Clínica Centro de Saúde. A atenção, o carinho e o respeito da equipe fizeram toda a diferença no meu atendimento.",
         image: depoimentoMasculino3,
     },
 ]
@@ -53,7 +53,7 @@ export function Depoimentos(){
     
     
     return(
-        <section id="testimonials" className="bg-white py-16 text-gray-400">
+        <section id="testimonials" className="bg-white py-16 text-gray-400 relative overflow-hidden">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-bold mb-12" data-aos="fade-down">Depoimentos</h2>
                 <div className="relative">

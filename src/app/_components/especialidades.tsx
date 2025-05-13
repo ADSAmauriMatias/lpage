@@ -68,7 +68,7 @@ export function Especialidades() {
 
 
     return(
-        <section id="especialidades" className='bg-white py-16 text-gray-400'>
+        <section id="especialidades" className='bg-white py-16 text-gray-400 relative overflow-hidden'>
             <div className='container mx-auto px-4'>
                 <div className='pb-8'>
                     <h4 className='text-4xl font-bold mb-12' data-aos="fade-down">Especialidades</h4>

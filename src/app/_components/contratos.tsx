@@ -72,7 +72,7 @@ export function Contratos() {
   };
 
   return (
-    <section id="contratos" className="py-16 text-gray-800 bg-gradient-to-r from-[#29535b] to-[#3e858d]">
+    <section id="contratos" className="py-16 text-gray-800 bg-gradient-to-r from-[#29535b] to-[#3e858d] relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="pb-8 max-w-2xl mx-auto">
           <h4 className="text-4xl font-bold mb-6 text-center text-white" data-aos="fade-down">

@@ -7,7 +7,7 @@ import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr';
 
 export function Sobre(){
     return(
-        <section id="sobre" className="bg-gradient-to-r from-[#29535b] to-[#3e858d] py-16">
+        <section id="sobre" className="bg-gradient-to-r from-[#29535b] to-[#3e858d] py-16 relative overflow-hidden">
             <div className="container px-4 mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div className="relative" data-aos="fade-right" data-aos-delay="300">
@@ -51,7 +51,7 @@ export function Sobre(){
                             </li>
                         </ul> */}
                         <div className="flex gap-2">
-                            <a href={`https://wa.me/558896506273?text=Ola vim pelo site e gostaria de mais informações`} target='_blank' className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md transition flex items-center justify-center w-fit gap-2 py-2 px-4 rounded-md">
+                            <a href={`https://wa.me/5585991649714?text=Ola vim pelo site e gostaria de mais informações`} target='_blank' className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md transition flex items-center justify-center w-fit gap-2 py-2 px-4 rounded-md">
                                 <WhatsappLogo className="w-5 h-5 text-white"/>
                                 Saiba Mais
                             </a>

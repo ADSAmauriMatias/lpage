@@ -112,7 +112,7 @@ export function Servicos(){
     }
     
     return(
-        <section id="servicos"className="bg-white py-16 text-gray-400">
+        <section id="servicos"className="bg-white py-16 text-gray-400 relative overflow-hidden">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-bold mb-12" data-aos="fade-down">Serviços</h2>
                 <div className="relative">
@@ -135,7 +135,7 @@ export function Servicos(){
                                                 <Clock className="w-4 h-4"/>
                                                 <span>{item.duration}</span>
                                             </div>
-                                            <a href={`https://wa.me/558896506273?text=Ola vim pelo site e gostaria de mais informações sobre ${item.title}`} target='_blank' className="flex items-center justify-center gap-2 bg-[#3e858d] text-white px-4 py-2 rounded-md hover:bg-emerald-700">
+                                            <a href={`https://wa.me/5585991649714?text=Ola vim pelo site e gostaria de mais informações sobre ${item.title}`} target='_blank' className="flex items-center justify-center gap-2 bg-[#3e858d] text-white px-4 py-2 rounded-md hover:bg-emerald-700">
                                                 <WhatsappLogo className="w-5 h-5"/>Agendar
                                             </a>
                                         </div>

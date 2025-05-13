@@ -43,7 +43,7 @@ export function MVV(){
     }
 
     return(
-        <section id="mvv"className="bg-gradient-to-r from-[#3e858d] to-[#29535b] py-16 text-white ">
+        <section id="mvv"className="bg-gradient-to-r from-[#3e858d] to-[#29535b] py-16 text-white  relative overflow-hidden">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-bold  mb-12" data-aos="fade-down">Missão, Visão e Valores</h2>
                 <div className="relative  mx-auto">
