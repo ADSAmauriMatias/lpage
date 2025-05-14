@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AosInit } from "./_components/aos-init";
 import { Header } from "./_components/header";
+import Script from "next/script";
+import { Analytics } from "./_components/analytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,12 +31,32 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        {/* Google Analytics Script */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-109S1VWRWC"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-109S1VWRWC');
+            `,
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
         {children}
         <AosInit/>
+        <Analytics />
       </body>
     </html>
   );
